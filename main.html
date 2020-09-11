@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <div id="play"><input type="button" onclick="ranop()"></div>
+        <div><input type="text" onsubmit="check()"></div>
+        <div id="operators">
+            <div id="first"></div>
+            <div id="second"></div>
+        </div>
+    </head>
+    <body>
+        <script>
+            function ranop(){
+                x = Math.floor(Math.random() * 10) + 1;
+                y = Math.floor(Math.random() * 10) + 1;
+                document.getElementById("first").innerHTML = x
+                document.getElementById("second").innerHTML = y
+            }
+            document.write(x)
+            document.write(y)
+            ranop()
+        </script>
+    </body>
+</html>
